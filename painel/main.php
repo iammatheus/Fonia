@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Painel de Controle</title>
-  </head>
-  <body>
-    <h1>Bem-vindo, </h1>
-    <a>[Sair]</a>
-  </body>
-</html>
+<?php
+  require_once('../classes/Usuario.php');
+  session_start();
+  if(!isset($_SESSION['id'])){
+    header("location: login.php");
+  }
+  if(isset($_GET['logout'])){
+    Usuario::deslogar();
+  }
+?>
+<h1>Bem-vindo, <?php echo $_SESSION['name']; ?></h1>
+<a href="?logout">[Sair]</a>

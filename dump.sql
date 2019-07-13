@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Jul-2019 às 04:19
+-- Generation Time: 13-Jul-2019 às 05:47
 -- Versão do servidor: 10.1.39-MariaDB
 -- versão do PHP: 7.1.29
 
@@ -47,10 +47,8 @@ CREATE TABLE `band` (
 --
 
 INSERT INTO `band` (`id`, `email`, `password`, `name`, `genre`, `description`, `website`, `twitter`, `facebook`, `instagram`, `active`) VALUES
-(1, 'matheus.ferreira9@hotmail.com', 'apo7', 'Matheus', 'Rock Gospel', 'Uma banda de rock gospel', 'www.apo7.com.br', 'twitter/apo7', 'facebook/apo7', 'instagram/apo7', NULL),
-(2, 'matheus.play.baixista@hotmail.com', '202cb962ac59075b964b07152d234b70', 'A', 'a', 'a', 'a', 'a', 'a', 'a', NULL),
-(3, 'matheus.sss@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Apocalipse', 'Rock Gospel', 'lala', '', '', '', '', NULL),
-(4, 'matheus.teste@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Guns N\\\' Roses', 'Hard Rock', 'Uma banda de hard rock foda pra krl', 'www.gunsnroses.com', 'twitter/gunsnroses', 'facebook/gunsnroses', 'instagram/gunsnroses', NULL);
+(1, 'admin@hotmail.com', '202cb962ac59075b964b07152d234b70', 'Apocalipse 7', 'Rock Gospel', 'lalala\r\n', '', '', '', '', NULL),
+(2, 'testando@hotmail.com', '202cb962ac59075b964b07152d234b70', 'Guns N Roses', 'Hard Rock', 'Uma banda de rock', 'www.gunsnroses.com', 'twitter/gunsnroses', 'facebook/gunsnroses', 'instagram/gunsnroses', NULL);
 
 --
 -- Indexes for dumped tables
@@ -60,7 +58,9 @@ INSERT INTO `band` (`id`, `email`, `password`, `name`, `genre`, `description`, `
 -- Indexes for table `band`
 --
 ALTER TABLE `band`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -70,7 +70,7 @@ ALTER TABLE `band`
 -- AUTO_INCREMENT for table `band`
 --
 ALTER TABLE `band`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
