@@ -1,3 +1,7 @@
 # Fonia
-* Sistema de Cadastro[ok]
-* Sistema de Login[ok]
+
+## Usuário
+- [x] Cadastro
+- [x] Login
+- [ ] Alterar informações do usuário
+- [ ] Excluir conta
