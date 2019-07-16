@@ -1,0 +1,321 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,body{
+  height: 100%;
+  background: rgb(225, 225, 225);
+}
+body{
+  overflow-x: hidden;
+}
+/*PÁGINA DE LOGIN*/
+.box-login{
+  width: 95%;
+  max-width: 600px;
+  padding: 60px 2%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+}
+.box-login h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 19px;
+  margin: 10px 0;
+  color: black;
+}
+.box-login input[type=text],
+.box-login input[type=password]{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  margin-top: 8px;
+}
+.btnsubmit{
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 16px;;
+  background: #00c59e;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+/*BOX ERROR DO PAINEL*/
+.erro-box{
+  width: 100%;
+  padding: 8px 2%;
+  text-align: center;
+  background: #f75353;
+  color: white;
+  font-size: 15px;
+}
+/*FIM DA PÁGINA DE LOGIN*/
+
+/*PAINEL DE CONTROLE*/
+.clear{clear: both;}
+.center{padding:0 2%; margin: 0 auto;}
+header{
+  position: relative;
+  left: 300px;
+  width: calc(100% - 300px);
+  padding: 10px 0;
+  background: #78909c;
+}
+.logout{
+  float: right;
+}
+.logout a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
+}
+.menu-btn{
+  float: left;
+  cursor: pointer;
+  font-size: 23px;
+  color: white;
+}
+.menu-wraper{
+  width: 300px;
+}
+.menu{
+  overflow-x: hidden;
+  float: left;
+  overflow-y: auto;
+  width: 300px;
+  height: 100%;
+  padding: 10px 0;
+  background: #455a64;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.box-usuario{
+  text-align: center;
+}
+.avatar-usuario{
+  text-align: left;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #2f3d42;
+  display: inline-block;
+}
+.avatar-usuario i{
+  font-size: 50px;
+  color: #2f3d42;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.imagem-usuario{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  border: 3px solid #2f3d42;
+  border-radius: 50%;
+}
+.imagem-usuario img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.nome-usuario{
+  text-align: center;
+  margin-top: 15px;
+}
+.nome-usuario p{
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*Conteúdo principal do painel*/
+.w100{width: 100%;}
+.w50{width: 49%;}
+.left{float:left;}
+.right{float: right;}
+.content{
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  padding: 30px;
+}
+.box-content{
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.box-content h2{
+  font-weight: normal;
+}
+.box-content i{
+  color: #333;
+}
+.items-menu{
+  margin-top: 30px;
+}
+.items-menu h2{
+  text-align: left;
+  font-weight: normal;
+  font-size: 17px;
+  background: #2f3d42;
+  color: white;
+  padding: 8px 2%;
+}
+.items-menu a{
+  display: block;
+  padding: 8px 2%;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #2f3d42;
+}
+
+/*BOX METRICAS*/
+.box-metricas{
+  margin-top: 16px;
+  padding: 0 10px;
+}
+.box-metrica-single{
+  float: left;
+  position: relative;
+  width: 33.3%;
+  background: #f4b03e;
+  border: 5px solid white;
+}
+.box-metricas .box-metrica-single:nth-of-type(2){
+  background: #e05c4e;
+}
+.box-metricas .box-metrica-single:nth-of-type(3){
+  background: #04a65a;
+}
+.box-metrica-wraper{
+  padding: 10px 20px;
+  text-align: left;
+  color: white;
+}
+.box-metrica-wraper h2{
+  font-weight: normal;
+  font-size: 23px;
+}
+.box-metrica-wraper p{
+  padding: 10px 0;
+  font-size: 20px;
+}
+/*Tabela responsiva*/
+.table-responsive{
+  max-width: 1280px;
+  margin: 20px auto;
+}
+.table-responsive .row:nth-of-type(1){
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+.table-responsive .row{
+  color: #777;
+  padding: 8px 0;
+}
+
+.box-content form{
+  margin: 30px 0;
+}
+.box-content form label{
+  font-size: 17px;
+  font-weight: 300;
+  display: block;
+}
+.box-content form input[type=text],
+.box-content form input[type=password]{
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+  height: 40px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+.box-content .form-group{
+  margin: 15px 0;
+}
+.box-content form input[type=file]{
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/*Box de alerta*/
+.box-alert{
+  text-align: center;
+  width: 100%;
+  padding: 8px 0;
+  color: white;
+}
+.box-alert i{
+  color: white;
+}
+.sucesso{
+  background: #00c59e;
+}
+.erro{
+  background: #f75353;
+}
+
+@media screen and (max-width: 1100px){
+  .box-metrica-single{width: 100%;}
+}
+@media screen and (max-width: 768px){
+  .menu{
+    display: none;
+  }
+  .content{
+    width: 100%;
+    left: 0;
+  }
+  header{
+    left: 0;
+    width: 100%;
+  }
+  .box-metrica-single{
+    width: 100%;
+  }
+  .items-menu a{
+  }
+}
+
+@media screen and (max-width: 500px){
+  .box-metrica-single{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .menu-wraper{
+    width: 200px;
+  }
+}

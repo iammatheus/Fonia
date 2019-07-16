@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13-Jul-2019 às 05:47
+-- Generation Time: 16-Jul-2019 às 21:48
 -- Versão do servidor: 10.1.39-MariaDB
 -- versão do PHP: 7.1.29
 
@@ -32,6 +32,7 @@ CREATE TABLE `band` (
   `id` int(11) NOT NULL,
   `email` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
+  `img` varchar(50) NOT NULL,
   `name` varchar(45) NOT NULL,
   `genre` varchar(45) NOT NULL,
   `description` varchar(45) NOT NULL,
@@ -46,9 +47,8 @@ CREATE TABLE `band` (
 -- Extraindo dados da tabela `band`
 --
 
-INSERT INTO `band` (`id`, `email`, `password`, `name`, `genre`, `description`, `website`, `twitter`, `facebook`, `instagram`, `active`) VALUES
-(1, 'admin@hotmail.com', '202cb962ac59075b964b07152d234b70', 'Apocalipse 7', 'Rock Gospel', 'lalala\r\n', '', '', '', '', NULL),
-(2, 'testando@hotmail.com', '202cb962ac59075b964b07152d234b70', 'Guns N Roses', 'Hard Rock', 'Uma banda de rock', 'www.gunsnroses.com', 'twitter/gunsnroses', 'facebook/gunsnroses', 'instagram/gunsnroses', NULL);
+INSERT INTO `band` (`id`, `email`, `password`, `img`, `name`, `genre`, `description`, `website`, `twitter`, `facebook`, `instagram`, `active`) VALUES
+(16, 'admin@hotmail.com', '123', 'kiss.jpg', 'Kiss', 'Rock', 'Uma banda de rock', 'www.kiss.com', 'twitter/kiss', 'facebook/kiss', 'instagram/kiss', 1);
 
 --
 -- Indexes for dumped tables
@@ -58,9 +58,7 @@ INSERT INTO `band` (`id`, `email`, `password`, `name`, `genre`, `description`, `
 -- Indexes for table `band`
 --
 ALTER TABLE `band`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `name` (`name`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -70,7 +68,7 @@ ALTER TABLE `band`
 -- AUTO_INCREMENT for table `band`
 --
 ALTER TABLE `band`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
