@@ -1,7 +1,7 @@
 # Fonia
 
 ## Usuário
-- [x] Cadastro
+- [ ] Cadastro
 - [x] Login
-- [ ] Alterar informações do usuário
+- [x] Alterar informações do usuário
 - [ ] Excluir conta
